@@ -1,9 +1,14 @@
+#dogs{
+  padding-top: 50px;
+}
+
 .dog-img{
-  width: 300px;
+  width: 340px;
   padding-bottom: 5px;
-  border: solid black 1px;
+  /* border: solid black 1px; */
 }
 
 .dog-desc{
-  border: solid black 1px;
+  /* border: solid black 1px; */
+  text-align: right;
 }
