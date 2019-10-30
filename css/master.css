@@ -2,13 +2,41 @@
   padding-top: 50px;
 }
 
+
 .dog-img{
   width: 340px;
   padding-bottom: 5px;
-  /* border: solid black 1px; */
+}
+.dog-img:hover{
+  cursor: pointer;
 }
 
 .dog-desc{
   /* border: solid black 1px; */
   text-align: right;
+}
+
+.myModal{
+  background-color: white;
+  height: auto;
+  width: 30vw;
+  display: none;
+  position: fixed;
+  top: 150px;
+  left: 35%;
+  z-index: 5;
+}
+.closeBar{
+  font-size: 55px;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  align-items: center;
+}
+.closeBar:hover{
+  cursor: pointer;
+}
+
+.blur {
+    -webkit-filter: blur(10px) grayscale(20%);
 }
