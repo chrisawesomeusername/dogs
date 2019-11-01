@@ -146,6 +146,71 @@ $('.closeBar').on('click', function(){
 
 
 
+
+
+
+
+
+document.getElementById('nameA').addEventListener('click', function(){
+  document.getElementById('dogs').innerHTML = ' '
+  dogs.sort(compare);//calling a function called compare to define the object property
+  function compare(a,b){
+    if (a.name > b.name){
+      return 1;//return one means it returns true.
+    } else if (a.name < b.name) {
+      return -1;//returns false.
+    }
+  }
+  callTheDogs();
+});
+
+document.getElementById('nameZ').addEventListener('click', function(){
+  document.getElementById('dogs').innerHTML = ' '
+  dogs.sort(compare);//calling a function called compare to define the object property
+  function compare(a,b){
+    if (a.name < b.name){
+      return 1;//return one means it returns true.
+    } else if (a.name > b.name) {
+      return -1;//returns false.
+    }
+  }
+  callTheDogs();
+});
+
+
+
+document.getElementById('ageUp').addEventListener('click', function(){
+  document.getElementById('dogs').innerHTML = ' '
+  dogs.sort(compare);//calling a function called compare to define the object property
+  function compare(a,b){
+    if (a.age > b.age){
+      return 1;//return one means it returns true.
+    } else if (a.age < b.age) {
+      return -1;//returns false.
+    }
+  }
+  callTheDogs();
+});
+document.getElementById('ageDown').addEventListener('click', function(){
+  document.getElementById('dogs').innerHTML = ' '
+  dogs.sort(compare);//calling a function called compare to define the object property
+  function compare(a,b){
+    if (a.age < b.age){
+      return 1;//return one means it returns true.
+    } else if (a.age > b.age) {
+      return -1;//returns false.
+    }
+  }
+  callTheDogs();
+});
+
+
+
+
+
+
+
+
 // buttons section
 // document.getElementById('beagle').addEventListener('click', function(){
 //   document.getElementById('dogs').innerHTML = ' ';
